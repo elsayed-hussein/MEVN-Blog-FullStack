@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/HomeView.vue";
 import AddPost from "../views/AddPostView.vue";
 import Post from "../views/PostView.vue";
+import EditPost from "../views/EditPostView.vue";
 
 Vue.use(VueRouter);
 
@@ -21,6 +22,11 @@ const routes = [
     path: "/post/:id",
     name: "post",
     component: Post,
+  },
+   {
+    path: "/edit-post/:id",
+    name: "edit-post",
+    component: EditPost,
   },
   {
     path: "/about",
